@@ -12,7 +12,7 @@ const swaggerDef = {
       url: `http://localhost:${config.port}/v1`,
     },
     {
-      url: `https://hamidhmz-node-heroku.herokuapp.com${config.port}/v1`,
+      url: 'https://hamidhmz-node-heroku.herokuapp.com/v1',
     },
   ],
 };

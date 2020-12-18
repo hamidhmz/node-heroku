@@ -66,6 +66,13 @@ heroku deploy
 git push heroku main
 ```
 
+heroku set environment variables 
+
+```bash
+heroku config:set "HEROKU_URL=https://hamidhmz-node-heroku.herokuapp.com/"
+heroku config:set "MONGODB_URL=mongodb+srv://challengeUser:WUMglwNBaydH8Yvu@challenge-xzwqd.mongodb.net/getir-case-study?retryWrites=true"
+```
+
 ensure your app is running
 
 ```bash
