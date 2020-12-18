@@ -9,10 +9,10 @@ const swaggerDef = {
   },
   servers: [
     {
-      url: `http://localhost:${config.port}/v1`,
+      url: 'https://hamidhmz-node-heroku.herokuapp.com/v1',
     },
     {
-      url: 'https://hamidhmz-node-heroku.herokuapp.com/v1',
+      url: `http://localhost:${config.port}/v1`,
     },
   ],
 };

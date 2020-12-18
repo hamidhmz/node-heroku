@@ -2,10 +2,14 @@ components:
   schemas:
     Record:
       type: object
+      description: DB fields
       properties:
         _id:
           type: string
+          description: mongoId
         key:
+          type: string
+        value:
           type: string
         createdAt:
           type: string
