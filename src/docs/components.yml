@@ -11,6 +11,9 @@ components:
           type: string
         counts:
           type: array
+          items:
+            type: integer
+          
     RecordResult:
       type: object
       properties:

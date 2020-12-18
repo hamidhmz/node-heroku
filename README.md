@@ -190,11 +190,11 @@ The validation schemas are defined in the `src/validations` directory and are us
 
 ```javascript
 const express = require('express');
-const validate = require('../../middlewares/validate');
-const userValidation = require('../../validations/user.validation');
-const userController = require('../../controllers/user.controller');
+const validate = require('../../middleware/validate');
+const recordValidation = require('../../validations/record.validation');
+const recordController = require('../../controllers/record.controller');
 
 const router = express.Router();
 
-router.post('/users', validate(userValidation.createUser), userController.createUser);
+router.route('/').post(validate(recordValidation.getRecords), recordController.getRecords);
 ```
