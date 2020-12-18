@@ -134,8 +134,7 @@ To view the list of available APIs and their specifications, run the server and 
 List of available routes:
 
 **Auth routes**:\
-`POST /v1/myapi` - my api\
-`ANY /v1/health-check` - health check\
+`POST /v1/records` - my records
 
 ## Error Handling
 
@@ -144,11 +143,13 @@ The app has a centralized error handling mechanism.
 Controllers wrapped inside the catchAsync utility wrapper, which forwards the error.
 
 ```javascript
+const ApiError = require('../utils/ApiError');
+const httpStatus = require('http-status');
 const catchAsync = require('../utils/catchAsync');
 
 const controller = catchAsync(async (req, res) => {
   // this error will be forwarded to the error handling middleware
-  throw new Error('Something wrong happened');
+  throw new ApiError(httpStatus.NOT_FOUND, 'User not found');
 });
 ```
 
