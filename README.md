@@ -66,7 +66,7 @@ heroku deploy
 git push heroku main
 ```
 
-heroku set environment variables 
+heroku set environment variables
 
 ```bash
 heroku config:set "HEROKU_URL=https://hamidhmz-node-heroku.herokuapp.com/"
