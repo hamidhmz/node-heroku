@@ -10,6 +10,7 @@ const errorConverter = (err, req, res, next) => {
     const message = error.message || httpStatus[statusCode];
     error = new ApiError(statusCode, message, false, err.stack);
   }
+
   next(error);
 };
 
@@ -23,7 +24,7 @@ const errorHandler = (err, req, res, next) => {
 
   const response = {
     code: statusCode,
-    message,
+    msg: message,
     ...(config.env === 'development' && { stack: err.stack }),
   };
 

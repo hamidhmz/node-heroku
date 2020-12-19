@@ -7,7 +7,7 @@ const { Record } = require('../models');
  * @param {string} [filter.endDate] - String Date in a YYYY-MM-DD format.
  * @param {number} [filter.minCount] - minCount for totalCount
  * @param {number} [filter.maxCount] - maxCount for totalCount
- * @returns {Promise<QueryResult>}
+ * @returns {Promise<Array>}
  */
 const queryRecords = async (filter) => {
   const matches = [];
