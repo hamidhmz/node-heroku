@@ -1,4 +1,4 @@
-# This is node-heroku app Getir Company
+# This is node-heroku app for interview of a Company
 project is running on:
 
 [![Deployed to Heroku](https://www.herokucdn.com/deploy/button.png)](https://hamidhmz-node-heroku.herokuapp.com/v1/docs)
